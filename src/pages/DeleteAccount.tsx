@@ -38,11 +38,11 @@ export default function DeleteAccount() {
                 alert(result.message)
             } else {
                 alert("Delete is successfully.");
+                localStorage.removeItem("access-token");
             }
         } catch (error) {
             console.log(error);
         } finally {
-            localStorage.removeItem("access-token");
             setLoading(false);
             navigate(0);
         }
