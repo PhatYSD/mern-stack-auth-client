@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
 import App from "./App";
-import { ForgetPassword, Home, Login, Logout, Notfound, Register, ResetPassword } from "./pages";
+import { DeleteAccound, ForgetPassword, Home, Login, Logout, Notfound, Register, ResetPassword } from "./pages";
 
 const router = createBrowserRouter(
     [
@@ -39,6 +39,10 @@ const router = createBrowserRouter(
                 {
                     path: "forgetpassword/",
                     element: <ForgetPassword />
+                },
+                {
+                    path: "deleteaccount/",
+                    element: <DeleteAccound />
                 }
             ]
         },

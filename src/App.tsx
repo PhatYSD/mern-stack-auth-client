@@ -50,10 +50,10 @@ export default function App() {
     }, []);
 
     useEffect(() => {
-        if (isLogin.login && ["/register", "/login"].includes(location.pathname)) {
+        if (isLogin.login && ["/register", "/login", "/forgetpassword"].includes(location.pathname)) {
             navigate("/");
         }
-        if (!isLogin.login && ["/logout", "/"].includes(location.pathname) && "/register" !== location.pathname) {
+        if (!isLogin.login && ["/logout", "/", "/deleteAccount"].includes(location.pathname) && "/register" !== location.pathname) {
             navigate("/login");
         }
     }, [isLogin.login, location.pathname]);

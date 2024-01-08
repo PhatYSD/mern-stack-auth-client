@@ -5,3 +5,4 @@ export { default as Notfound } from "./Notfound";
 export { default as Register } from "./Register";
 export { default as ResetPassword } from "./ResetPassword";
 export { default as ForgetPassword } from "./ForgetPassword";
+export { default as DeleteAccound } from "./DeleteAccount";
