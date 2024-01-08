@@ -24,7 +24,7 @@ export default function DeleteAccount() {
         setLoading(true);
 
         try {
-            const response = await fetch("/api/auth/deleteaccount", {
+            const response = await fetch("https://mern-stack-auth-api.onrender.com/api/auth/deleteaccount", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

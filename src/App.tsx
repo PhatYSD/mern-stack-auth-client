@@ -22,7 +22,7 @@ export default function App() {
             const token = localStorage.getItem("access-token");
 
             if (token) {
-                const response = await fetch("/api/auth/", {
+                const response = await fetch("https://mern-stack-auth-api.onrender.com/api/auth/", {
                     headers: {
                         "access-token": `${token ? token : ""}`
                     }

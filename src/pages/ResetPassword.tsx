@@ -23,7 +23,7 @@ export default function ResetPassword() {
         setLoading(true);
 
         try {
-            const response = await fetch("/api/auth/resetpassword", {
+            const response = await fetch("https://mern-stack-auth-api.onrender.com/api/auth/resetpassword", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

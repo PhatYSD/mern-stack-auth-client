@@ -25,7 +25,7 @@ export default function ForgetPassword() {
         setLoading(true);
 
         try {
-            const response = await fetch("/api/auth/forgetpassword/check", {
+            const response = await fetch("https://mern-stack-auth-api.onrender.com/api/auth/forgetpassword/check", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -59,7 +59,7 @@ export default function ForgetPassword() {
         setLoading(true);
 
         try {
-            const response = await fetch("/api/auth/forgetpassword/change", {
+            const response = await fetch("https://mern-stack-auth-api.onrender.com/api/auth/forgetpassword/change", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
